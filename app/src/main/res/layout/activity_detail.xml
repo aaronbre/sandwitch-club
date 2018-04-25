@@ -63,8 +63,10 @@
                 style="@style/textView"
                 app:layout_constraintLeft_toLeftOf="@id/also_known_label"
                 app:layout_constraintTop_toBottomOf="@id/also_known_label"
-                tools:text="A name, Another name,
-A third name" />
+                android:maxWidth="200dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="A name, Another name,A third name" />
 
             <TextView
                 android:id="@+id/origin_label"
@@ -88,7 +90,7 @@ A third name" />
                 android:background="#dedede"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/also_known_tv" />
+                app:layout_constraintTop_toBottomOf="@id/origin_tv" />
 
             <TextView
                 android:id="@+id/ingredients_label"
